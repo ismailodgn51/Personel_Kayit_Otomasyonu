@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="362.0" prefWidth="561.0" style="-fx-background-color: #9bb4bf;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.İSEALINANLAR">
+   <children>
+      <TableView fx:id="tabloview" layoutX="17.0" layoutY="68.0" prefHeight="240.0" prefWidth="532.0">
+        <columns>
+            <TableColumn fx:id="id" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="adi" prefWidth="75.0" text="ADI" />
+          <TableColumn fx:id="soyadi" prefWidth="75.0" text="SOYADI" />
+            <TableColumn fx:id="mail" prefWidth="132.0" text="MAIL" />
+            <TableColumn fx:id="sirket" prefWidth="72.0" text="SIRKET" />
+            <TableColumn fx:id="meslke" prefWidth="128.0" text="MESLEK" />
+        </columns>
+      </TableView>
+      <Label layoutX="239.0" layoutY="31.0" text="Label" textFill="#9bb4bf" />
+      <AnchorPane layoutX="6.0" layoutY="18.0" prefHeight="44.0" prefWidth="552.0" style="-fx-background-color: #e1cccc;">
+         <children>
+            <Label layoutX="170.0" layoutY="14.0" text="MULAKATA GIRENLERIN LISTESI" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="Btn_Geri" layoutX="418.0" layoutY="320.0" mnemonicParsing="false" onAction="#Btn_Geri_Click" prefHeight="34.0" prefWidth="84.0" style="-fx-background-color: #96dad1;" text="GERI DON">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/javafotolar/geri.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

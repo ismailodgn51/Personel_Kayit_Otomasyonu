@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor_hakkinda" prefHeight="451.0" prefWidth="202.0" style="-fx-background-color: #e8ebcf;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HakkindaController">
+   <children>
+      <AnchorPane fx:id="anchor_gizle" prefHeight="451.0" prefWidth="202.0" style="-fx-background-color: #f2c793;">
+         <children>
+            <Label fx:id="k1" layoutY="38.0" prefHeight="25.0" prefWidth="200.0" text="Sevgili işarayan lütfen bilgilerini tam" />
+            <Label layoutX="12.0" layoutY="63.0" prefHeight="25.0" prefWidth="177.0" text="doldur kayit ettiğin tüm bilgilerin" />
+            <Label layoutX="12.0" layoutY="88.0" prefHeight="25.0" prefWidth="190.0" text="bizim güvencemiz altindadir.Umar-" />
+            <Label layoutX="11.0" layoutY="113.0" prefHeight="25.0" prefWidth="190.0" text="ım en kisa zamanda iş bulursunuz." />
+            <Label layoutX="12.0" layoutY="150.0" prefHeight="25.0" prefWidth="190.0" text="AÇIKLAMA" />
+            <Label layoutX="10.0" layoutY="183.0" prefHeight="25.0" prefWidth="190.0" text="TC kimlik numarinizi dogru girdiğinizden">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="208.0" prefHeight="25.0" prefWidth="190.0" text="emin olun.">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutY="374.0" prefHeight="10.0" prefWidth="200.0" style="-fx-background-color: white;" />
+            <AnchorPane layoutY="28.0" prefHeight="10.0" prefWidth="200.0" style="-fx-background-color: white;" />
+            <AnchorPane layoutY="173.0" prefHeight="4.0" prefWidth="200.0" style="-fx-background-color: white;" />
+            <AnchorPane layoutY="138.0" prefHeight="10.0" prefWidth="200.0" style="-fx-background-color: white;" />
+            <AnchorPane layoutY="231.0" prefHeight="4.0" prefWidth="200.0" style="-fx-background-color: white;" />
+            <Label layoutX="5.0" layoutY="244.0" prefHeight="25.0" prefWidth="190.0" text="Guncelleme yapabilmeniz icin TC kimlik ">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="5.0" layoutY="269.0" prefHeight="25.0" prefWidth="190.0" text="numaranizi girmeniz yeterli olacaktir.">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutY="292.0" prefHeight="4.0" prefWidth="200.0" style="-fx-background-color: white;" />
+            <Label layoutX="5.0" layoutY="309.0" prefHeight="25.0" prefWidth="190.0" text="BİLGİLERİNİZİ EKSİZ DOLDURMAYA OZEN">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="75.0" layoutY="334.0" prefHeight="25.0" prefWidth="51.0" text="GOSTERİN">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

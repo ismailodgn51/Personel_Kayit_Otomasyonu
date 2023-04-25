@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="442.0" style="-fx-background-color: #cda0a0;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Sirketlogincontroller">
+   <children>
+      <Button fx:id="btn_login_giris" layoutX="315.0" layoutY="249.0" mnemonicParsing="false" onAction="#btn_login_giris_click" text="Giris Yap" />
+      <TextField fx:id="txt_login_sirket" layoutX="172.0" layoutY="158.0" promptText="Kullanici Adi" />
+      <Label layoutX="102.0" layoutY="161.0" prefHeight="20.0" prefWidth="63.0" text="Sirket Adi:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="132.0" layoutY="219.0" text="Sifre:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="1.0" prefHeight="70.0" prefWidth="438.0" style="-fx-background-color: #b8d7b0;">
+         <children>
+            <Label layoutX="128.0" layoutY="20.0" prefHeight="31.0" prefWidth="202.0" text="SİRKET GİRİŞ EKRANI">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="85.0" layoutY="108.0" prefHeight="35.0" prefWidth="142.0" style="-fx-background-color: #b5b3b3;" />
+      <Label layoutX="171.0" layoutY="294.0" text="Şirketimize Hoşgeldiniz.">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5303867403314917" centerY="0.5308056872037915" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9473684430122375" green="0.42105263471603394" blue="0.42105263471603394" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <AnchorPane layoutX="222.0" layoutY="108.0" prefHeight="35.0" prefWidth="55.0" style="-fx-background-color: #a2dde8;" />
+      <AnchorPane layoutX="277.0" layoutY="108.0" prefHeight="35.0" prefWidth="55.0" style="-fx-background-color: #f213cc;" />
+      <AnchorPane layoutX="332.0" layoutY="108.0" prefHeight="35.0" prefWidth="55.0" style="-fx-background-color: #6bc62f;" />
+      <AnchorPane layoutX="384.0" layoutY="108.0" prefHeight="35.0" prefWidth="55.0" style="-fx-background-color: #c61717;" />
+      <AnchorPane layoutY="108.0" prefHeight="35.0" prefWidth="106.0" style="-fx-background-color: #d0cdcd;" />
+      <ImageView fx:id="imagevievid" fitHeight="169.0" fitWidth="439.0" layoutX="3.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/javafotolar/airbnb-1024x338.jpg" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="txt_login_sifre" layoutX="175.0" layoutY="217.0" promptText="Sifre" />
+      <Label fx:id="kayit" layoutX="250.0" layoutY="253.0" onMouseClicked="#kayitC" text="KAyitol" />
+   </children>
+</AnchorPane>

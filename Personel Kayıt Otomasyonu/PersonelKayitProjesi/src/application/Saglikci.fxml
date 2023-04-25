@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="704.0" prefWidth="824.0" style="-fx-background-color: #a1ddda;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Saglikci_Controller">
+   <children>
+      <TextField fx:id="txt_Adi" layoutX="355.0" layoutY="101.0" />
+      <TextField fx:id="txt_Soyadi" layoutX="355.0" layoutY="135.0" />
+      <TextField fx:id="txt_Kimlik_No" layoutX="355.0" layoutY="199.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="txt_Telefon_No" layoutX="358.0" layoutY="229.0" />
+      <Label layoutX="312.0" layoutY="105.0" text="Adi:" />
+      <Label layoutX="304.0" layoutY="139.0" text="Soyadi:" />
+      <Label layoutX="282.0" layoutY="203.0" text="Tc kimlik no:" />
+      <Label layoutX="282.0" layoutY="233.0" text="Telefon No:" />
+      <TextField fx:id="txt_Maas" layoutX="640.0" layoutY="204.0" />
+      <Label layoutX="542.0" layoutY="208.0" text="Ucret beklentiniz:" />
+      <Label layoutX="531.0" layoutY="112.0" prefHeight="26.0" prefWidth="38.0" text="Adres:" />
+      <TextArea fx:id="txt_Area_Adres" layoutX="574.0" layoutY="92.0" prefHeight="58.0" prefWidth="254.0" />
+      <Label layoutX="304.0" layoutY="268.0" prefHeight="25.0" prefWidth="39.0" text="Tecrube">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radio_evli" layoutX="640.0" layoutY="176.0" mnemonicParsing="false" onAction="#radio_evli_sec" text="Evli" />
+      <RadioButton fx:id="radio_bekar" layoutX="702.0" layoutY="176.0" mnemonicParsing="false" onAction="#radio_bekar_sec" text="Bekar" />
+      <Label layoutX="570.0" layoutY="176.0" text="Medei hal:" />
+      <Label layoutX="277.0" layoutY="172.0" text="Dogum tarihi:" />
+      <TextArea fx:id="Text_Area_Tecrube" layoutX="355.0" layoutY="261.0" prefHeight="38.0" prefWidth="177.0" />
+      <TextField fx:id="txt_Id" layoutX="610.0" layoutY="60.0" visible="false" />
+      <DatePicker fx:id="txt_Dogum_Tarihii" layoutX="357.0" layoutY="168.0" prefHeight="25.0" prefWidth="149.0" />
+      <AnchorPane fx:id="anchor_gizle" layoutX="35.0" layoutY="135.0" prefHeight="451.0" prefWidth="202.0" style="-fx-background-color: #c9c9c9;">
+         <children>
+            <Label fx:id="k1" layoutY="38.0" prefHeight="25.0" prefWidth="200.0" text="Sevgili işarayan lütfen bilgilerini tam" />
+            <Label layoutX="12.0" layoutY="63.0" prefHeight="25.0" prefWidth="177.0" text="doldur kayit ettiğin tüm bilgilerin" />
+            <Label layoutX="12.0" layoutY="88.0" prefHeight="25.0" prefWidth="190.0" text="bizim güvencemiz altindadir.Umar-" />
+            <Label layoutX="11.0" layoutY="113.0" prefHeight="25.0" prefWidth="190.0" text="ım en kisa zamanda iş bulursunuz." />
+            <Label layoutX="12.0" layoutY="150.0" prefHeight="25.0" prefWidth="190.0" text="AÇIKLAMA" />
+            <Label layoutX="10.0" layoutY="183.0" prefHeight="25.0" prefWidth="190.0" text="TC kimlik numarinizi dogru girdiğinizden">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="208.0" prefHeight="25.0" prefWidth="190.0" text="emin olun.">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutY="374.0" prefHeight="10.0" prefWidth="200.0" style="-fx-background-color: white;" />
+            <AnchorPane layoutY="28.0" prefHeight="10.0" prefWidth="200.0" style="-fx-background-color: white;" />
+            <AnchorPane layoutY="173.0" prefHeight="4.0" prefWidth="200.0" style="-fx-background-color: white;" />
+            <AnchorPane layoutY="138.0" prefHeight="10.0" prefWidth="200.0" style="-fx-background-color: white;" />
+            <AnchorPane layoutY="231.0" prefHeight="4.0" prefWidth="200.0" style="-fx-background-color: white;" />
+            <Label layoutX="5.0" layoutY="244.0" prefHeight="25.0" prefWidth="190.0" text="Guncelleme yapabilmeniz icin TC kimlik ">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="5.0" layoutY="269.0" prefHeight="25.0" prefWidth="190.0" text="numaranizi girmeniz yeterli olacaktir.">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutY="292.0" prefHeight="4.0" prefWidth="200.0" style="-fx-background-color: white;" />
+            <Label layoutX="5.0" layoutY="309.0" prefHeight="25.0" prefWidth="190.0" text="BİLGİLERİNİZİ EKSİZ DOLDURMAYA OZEN">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="75.0" layoutY="334.0" prefHeight="25.0" prefWidth="51.0" text="GOSTERİN">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="339.0" layoutY="490.0" prefHeight="131.0" prefWidth="460.0" style="-fx-background-color: #a1ddda;">
+         <children>
+            <Label layoutX="219.0" layoutY="6.0" text="Okul Bilgileri" />
+            <Label layoutX="14.0" layoutY="49.0" text="Lisans" />
+            <TextField fx:id="Lisans" layoutX="61.0" layoutY="45.0" prefHeight="25.0" prefWidth="177.0" />
+            <Label layoutX="14.0" layoutY="91.0" text="Ortalama" />
+            <TextField fx:id="Ortalama" layoutX="75.0" layoutY="87.0" prefHeight="25.0" prefWidth="73.0" />
+         </children>
+      </AnchorPane>
+      <ListView fx:id="listviewsaglik" layoutX="598.0" layoutY="281.0" prefHeight="200.0" prefWidth="200.0" />
+      <ImageView fitHeight="75.0" fitWidth="134.0" layoutX="261.0" layoutY="317.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/javafotolar/SAGLIK.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="604.0" layoutY="260.0" text="ASAGIDA ALANINIZI ISARETLEYINIZ" />
+      <ImageView fitHeight="75.0" fitWidth="149.0" layoutX="408.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/javafotolar/att.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="149.0" layoutX="261.0" layoutY="398.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/javafotolar/saglık2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="74.0" fitWidth="149.0" layoutX="408.0" layoutY="398.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/javafotolar/ebe.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="74.0" fitWidth="73.0" layoutX="475.0" layoutY="398.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/javafotolar/ebe.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="357.0" layoutY="14.0" prefHeight="50.0" prefWidth="438.0" style="-fx-background-color: #d5f5e4;">
+         <children>
+            <Label layoutX="68.0" layoutY="17.0" prefHeight="17.0" prefWidth="342.0" text="SAGLIK CALISANI KONUMUNDA ISENIZ FORMU DOLDURUNUZ " textFill="#004a46" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="Btn_Kaydet" layoutX="411.0" layoutY="640.0" mnemonicParsing="false" onAction="#Btn_Kaydet_Click" prefHeight="41.0" prefWidth="112.0" style="-fx-background-color: #d5f5e4;" text="KAYDET">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/javafotolar/Kaydet.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="Btn_Geri" layoutX="657.0" layoutY="643.0" mnemonicParsing="false" onAction="#Btn_Geri_Click" prefHeight="34.0" prefWidth="84.0" style="-fx-background-color: #d5f5e4;" text="GERI DON">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/javafotolar/geri.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="Btn_Gizle" layoutX="131.0" layoutY="8.0" mnemonicParsing="false" onAction="#Btn_Gizle_Click" prefHeight="42.0" prefWidth="106.0" style="-fx-background-color: #d5f5e4;" text="    MENU">
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/javafotolar/menu.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="Btn_Guncelle" layoutX="533.0" layoutY="639.0" mnemonicParsing="false" onAction="#Btn_Guncelle_Click" prefHeight="40.0" prefWidth="112.0" style="-fx-background-color: #d5f5e4;" text="  Guncelle">
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/javafotolar/guncelle.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <AnchorPane fx:id="Anchor_Sol" layoutX="-247.0" layoutY="93.0" prefHeight="519.0" prefWidth="247.0" style="-fx-background-color: #95c0d3;">
+         <children>
+            <Button fx:id="Btn_Kayitlar" layoutY="29.0" mnemonicParsing="false" onAction="#Btn_Kayitlar_Click" prefHeight="78.0" prefWidth="247.0" style="-fx-background-color: #faf2ff;" text="RAKIPLERINIZI VE KENDINIZI GORUNTULEYIN" />
+            <Button fx:id="GirisimFikirleri" layoutY="145.0" mnemonicParsing="false" onAction="#GirisimFikirleri_Click" prefHeight="107.0" prefWidth="247.0" style="-fx-background-color: #faf2ff;" text="GIRISIM FIKIRLERI ICI BURAYA GOZ ATABILIRSINIZ">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="Bilgilendirme" layoutX="2.0" layoutY="281.0" mnemonicParsing="false" onAction="#Bilgilendirme_Click" prefHeight="101.0" prefWidth="243.0" style="-fx-background-color: #faf2ff;" text="HAKKIMIZDA " />
+            <Button fx:id="Cikis" layoutX="2.0" layoutY="419.0" mnemonicParsing="false" onAction="#Cikis_Click" prefHeight="78.0" prefWidth="243.0" style="-fx-background-color: #faf2ff;" text="CIKIS" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

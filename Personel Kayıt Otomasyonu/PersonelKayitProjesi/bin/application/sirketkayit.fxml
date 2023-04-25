@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="293.0" prefWidth="374.0" style="-fx-background-color: #f8dcdc;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.sirketkayit">
+   <children>
+      <TextField fx:id="kuladi" layoutX="194.0" layoutY="125.0" />
+      <TextField fx:id="sifre" layoutX="194.0" layoutY="166.0" />
+      <Label layoutX="138.0" layoutY="129.0" text="Sirket Adi" />
+      <Label layoutX="151.0" layoutY="170.0" text="Sifre" />
+      <AnchorPane layoutY="75.0" prefHeight="75.0" prefWidth="71.0" style="-fx-background-color: #949494;" />
+      <AnchorPane layoutY="150.0" prefHeight="65.0" prefWidth="71.0" style="-fx-background-color: #a2dde8;" />
+      <AnchorPane layoutY="307.0" prefHeight="35.0" prefWidth="71.0" style="-fx-background-color: #c61717;" />
+      <AnchorPane prefHeight="75.0" prefWidth="71.0" style="-fx-background-color: #aeaeae;" />
+      <AnchorPane layoutY="215.0" prefHeight="46.0" prefWidth="71.0" style="-fx-background-color: #f213cc;" />
+      <AnchorPane layoutY="261.0" prefHeight="46.0" prefWidth="71.0" style="-fx-background-color: #6bc62f;" />
+      <Label layoutX="73.0" layoutY="52.0" text="SIZDE KAYIT OLUP KENDINIZI BUYUK KISILERE DUYURABILIRSINIZ" />
+      <Button fx:id="btngir" layoutX="258.0" layoutY="243.0" mnemonicParsing="false" onAction="#btngir_Click" prefHeight="17.0" prefWidth="98.0" style="-fx-background-color: #949494;" text="KAYDET">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/javafotolar/Kaydet.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

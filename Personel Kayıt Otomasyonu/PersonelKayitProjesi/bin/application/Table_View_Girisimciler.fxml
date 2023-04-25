@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="448.0" prefWidth="489.0" style="-fx-background-color: #e1ffee;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Table_ViewGirisimciler">
+   <children>
+      <TableView fx:id="table_View" layoutX="14.0" layoutY="51.0" onMouseClicked="#table_click" prefHeight="200.0" prefWidth="456.0">
+        <columns>
+          <TableColumn fx:id="ID" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="Adi" prefWidth="75.0" text="Adi" />
+            <TableColumn fx:id="Soyadi" prefWidth="75.0" text="Soyadi" />
+            <TableColumn fx:id="iletisim" prefWidth="75.0" text="İletisim" />
+            <TableColumn fx:id="Fikir" prefWidth="154.0" text="G:Fikri" />
+        </columns>
+      </TableView>
+      <TextArea fx:id="area" layoutX="24.0" layoutY="276.0" prefHeight="139.0" prefWidth="436.0" wrapText="true" />
+      <Label layoutX="183.0" layoutY="20.0" text="GENC GIRISIMCILER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="Btn_Geri" layoutX="376.0" layoutY="415.0" mnemonicParsing="false" onAction="#geridon_click" prefHeight="34.0" prefWidth="84.0" style="-fx-background-color: #d5f5e4;" text="GERI DON">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/javafotolar/geri.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="485.0" prefWidth="466.0" style="-fx-background-color: #f8d9d9;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GirisimFikri_Controller">
+   <children>
+      <AnchorPane prefHeight="82.0" prefWidth="466.0" style="-fx-background-color: #b5b3b3;">
+         <children>
+            <Label layoutX="89.0" layoutY="41.0" text="FIKIRLERINIZ BELKI TANIMADIGINIZ INSANLAR ICIN ONEMLI" />
+            <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="258.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="KAYDET">
+                  <items>
+                    <MenuItem fx:id="KAYDET" mnemonicParsing="false" onAction="#KAYDET_CLICK" text="GONDER" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="ANA SAYFA">
+                  <items>
+                    <MenuItem fx:id="Don" mnemonicParsing="false" onAction="#Don_Click" text="DON" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Programı Kapat">
+                     <items>
+                        <MenuItem fx:id="CIK" mnemonicParsing="false" onAction="#CIK_Click" text="Cık" />
+                     </items></Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="82.0" prefHeight="248.0" prefWidth="233.0" style="-fx-background-color: #a2dde8;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="17.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/javafotolar/zeka.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="233.0" layoutY="82.0" prefHeight="248.0" prefWidth="233.0" style="-fx-background-color: #d0cdcd;">
+         <children>
+            <TextField fx:id="adi" layoutX="67.0" layoutY="86.0" />
+            <TextField fx:id="soyadi" layoutX="67.0" layoutY="132.0" />
+            <TextField fx:id="iletisim" layoutX="67.0" layoutY="179.0" />
+            <Label layoutX="8.0" layoutY="90.0" text="ADINIZ:" />
+            <Label layoutY="136.0" text="SOYADINIZ:" />
+            <Label layoutX="5.0" layoutY="183.0" text="ILETİSİM :" />
+         </children>
+      </AnchorPane>
+      <TextArea fx:id="fikriniz" layoutX="14.0" layoutY="356.0" prefHeight="116.0" prefWidth="439.0" wrapText="true" />
+      <Label layoutX="22.0" layoutY="340.0" text="ASAGIDAKI KUTUCUKLARI GIRISIM FIKIRLERINIZI IHTIYACLARINIZI DETAYLICA YAZINIZ">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="414.0" prefWidth="1302.0" style="-fx-background-color: #d1d39a;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Table_View_finansController">
+   <children>
+      <Button fx:id="btnSil" layoutX="517.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnSil_Click" prefHeight="34.0" prefWidth="134.0" style="-fx-background-color: #e0f6ff;" text="KAYDIMI SIL">
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/javafotolar/sil.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btn_arama" layoutX="410.0" layoutY="362.0" mnemonicParsing="false" onAction="#btn_arama_Click" prefHeight="40.0" prefWidth="97.0" style="-fx-background-color: #e0f6ff;" text="Arama">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/javafotolar/arama.jpg" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <TextField fx:id="txtdeger1" layoutX="403.0" layoutY="271.0" />
+      <TextField fx:id="txtdeger2" layoutX="403.0" layoutY="326.0" />
+      <TextField fx:id="txt_arama" layoutX="98.0" layoutY="288.0" onKeyPressed="#txt_arama_keypressed" />
+      <TableView fx:id="Table_View_finans" layoutX="5.0" layoutY="71.0" onMouseClicked="#kayitlar_table_Click" prefHeight="328.0" prefWidth="1190.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="211.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="71.0">
+         <columns>
+            <TableColumn fx:id="ID" prefWidth="44.0" text="ID" />
+            <TableColumn fx:id="Adi" prefWidth="88.0" text="Adi" />
+            <TableColumn fx:id="Soyadi" prefWidth="77.0" text="Soyadi" />
+            <TableColumn fx:id="D_Tarihi" prefWidth="81.0" text="D.Tarihi" />
+            <TableColumn fx:id="Tc_Kimlik" prefWidth="81.0" text="Tc kimlik" />
+            <TableColumn fx:id="Telefon_No" prefWidth="79.0" text="Telefon No" />
+            <TableColumn fx:id="Medeni_Hal" prefWidth="75.0" text="Medeni Hal" />
+            <TableColumn fx:id="Maas" prefWidth="85.0" text="Ucret beklenitii" />
+            <TableColumn fx:id="Adres" prefWidth="87.0" text="Adres" />
+            <TableColumn fx:id="Egitim" prefWidth="90.0" text="Lisans" />
+            <TableColumn fx:id="Ortalama" prefWidth="62.0" text="Ortalama" />
+            <TableColumn fx:id="mail" prefWidth="75.0" text="mail" />
+            <TableColumn fx:id="cinsiyet" prefWidth="63.0" text="cinsiyet" />
+            <TableColumn fx:id="Erp_Bilgisi" prefWidth="75.0" text="Erp Bilgisi" />
+            <TableColumn fx:id="Exel_Bilgisi" prefWidth="75.0" text="Exel Bilgisi" />
+            <TableColumn fx:id="C_saati" prefWidth="75.0" text="C.Saati Esneklik" />
+            <TableColumn fx:id="modul" prefWidth="75.0" text="Modul" />
+         </columns>
+      </TableView>
+      <Label fx:id="tckimlik3" layoutX="45.0" layoutY="374.0" text="Label" visible="false" />
+      <Label layoutX="68.0" layoutY="263.0" text="SOYADINIZ ILE ARAMA YAPABILIRSINIZ" />
+      <AnchorPane layoutX="5.0" layoutY="14.0" prefHeight="41.0" prefWidth="1293.0" style="-fx-background-color: #e0f6ff;">
+         <children>
+            <Label layoutX="379.0" layoutY="12.0" prefHeight="17.0" prefWidth="620.0" text="FINANS KAYIT TABLOSUNU ASAGIDA GOZUKMEKTEDIR KIMLIK NUMARANIZ ILE BILGILERINIZI GOREBILIRSINIZ" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="Btn_Geri" layoutX="668.0" layoutY="365.0" mnemonicParsing="false" onAction="#Btn_Geri_Click" prefHeight="34.0" prefWidth="84.0" style="-fx-background-color: #e0f6ff;" text="GERI DON">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/javafotolar/geri.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

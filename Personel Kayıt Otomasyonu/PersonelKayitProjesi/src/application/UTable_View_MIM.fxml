@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="569.0" prefWidth="1329.0" style="-fx-background-color: #fcebeb;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UTable_View_Mimar">
+   <children>
+      <TextField fx:id="txtadi" layoutX="139.0" layoutY="412.0" />
+      <TextField fx:id="txtsoyadi" layoutX="139.0" layoutY="468.0" />
+      <TextField fx:id="telefon" layoutX="139.0" layoutY="536.0" />
+      <Label layoutX="103.0" layoutY="399.0" text="ADI:" />
+      <Label layoutX="78.0" layoutY="455.0" prefHeight="17.0" prefWidth="49.0" text="SOYADI:" />
+      <Label layoutX="36.0" layoutY="523.0" prefHeight="17.0" prefWidth="103.0" text="ILETISIM BILGILERI:" />
+      <TextField fx:id="maila" layoutX="139.0" layoutY="502.0" />
+      <Label layoutX="78.0" layoutY="489.0" prefHeight="17.0" prefWidth="49.0" text="Mail:" />
+      <TextArea fx:id="txtarea" layoutX="355.0" layoutY="425.0" prefHeight="136.0" prefWidth="395.0" />
+      <TableView fx:id="Table_View_Mim" layoutX="14.0" layoutY="71.0" onMouseClicked="#kayitlar_table_Click" prefHeight="312.0" prefWidth="1315.0" tableMenuButtonVisible="true">
+         <columns>
+            <TableColumn fx:id="ID" prefWidth="48.0" text="ID" />
+            <TableColumn fx:id="fakulte" prefWidth="75.0" text="Fakulte" />
+            <TableColumn fx:id="Adi" prefWidth="110.0" text="Adi" />
+            <TableColumn fx:id="Soyadi" minWidth="0.0" prefWidth="51.0" text="Soyadi" />
+            <TableColumn fx:id="D_Tarihi" prefWidth="81.0" text="D.Tarihi" />
+            <TableColumn fx:id="Tc_Kimlik" prefWidth="81.0" text="Tc kimlik" />
+            <TableColumn fx:id="Telefon_No" prefWidth="79.0" text="Telefon No" />
+            <TableColumn fx:id="Medeni_Hal" prefWidth="75.0" text="Medeni Hal" />
+            <TableColumn fx:id="Maas" prefWidth="85.0" text="Ucret beklenitii" />
+            <TableColumn fx:id="Adres" prefWidth="87.0" text="Adres" />
+            <TableColumn fx:id="Egitim" prefWidth="90.0" text="Lisans" />
+            <TableColumn fx:id="Tecrube" prefWidth="83.0" text="Tecrübe" />
+            <TableColumn fx:id="Alan" prefWidth="73.0" text="Alan" />
+            <TableColumn fx:id="Ortalama" prefWidth="62.0" text="Ortalama" />
+            <TableColumn fx:id="Brans" prefWidth="75.0" text="Brans" />
+            <TableColumn fx:id="Sorgu" prefWidth="96.0" text="Sorgu" />
+            <TableColumn fx:id="mail" prefWidth="75.0" text="mail" />
+         </columns>
+      </TableView>
+      <Button fx:id="iseal" layoutX="775.0" layoutY="482.0" mnemonicParsing="false" onAction="#iseal_Click" prefHeight="33.0" prefWidth="115.0" style="-fx-background-color: #e0f6ff;" text="MULAKATA AL" />
+      <ToggleButton fx:id="geridon" layoutX="799.0" layoutY="527.0" mnemonicParsing="false" onAction="#geridon_click" prefHeight="17.0" prefWidth="90.0" style="-fx-background-color: #e0f6ff;" text="GERIDON">
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/javafotolar/geri.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </ToggleButton>
+      <AnchorPane layoutX="18.0" layoutY="14.0" prefHeight="41.0" prefWidth="1293.0" style="-fx-background-color: #e0f6ff;">
+         <children>
+            <Label layoutX="475.0" layoutY="10.0" prefHeight="22.0" prefWidth="408.0" text="MIMARLIK ALANINDA IS BASVURU LISTESI VE BASVURANLARIN BILGILERI" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

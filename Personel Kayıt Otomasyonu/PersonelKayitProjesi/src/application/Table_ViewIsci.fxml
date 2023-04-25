@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="470.0" prefWidth="1086.0" style="-fx-background-color: #c9aeae;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Table_View_IsciController">
+   <children>
+      <TextField fx:id="txt_arama" layoutX="86.0" layoutY="323.0" onKeyPressed="#txt_arama_keypressed" />
+      <TextField fx:id="txtdeger1" layoutX="323.0" layoutY="334.0" />
+      <TextField fx:id="txtdeger2" layoutX="323.0" layoutY="372.0" />
+      <Label fx:id="tckimlik" layoutX="48.0" layoutY="395.0" text="Label" visible="false" />
+      <TableView fx:id="Table_View_Yonetici" layoutX="42.0" layoutY="86.0" onMouseClicked="#kayitlar_table_Click" prefHeight="208.0" prefWidth="989.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="198.0" AnchorPane.leftAnchor="42.0" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="86.0">
+         <columns>
+            <TableColumn fx:id="ID" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="Adi" prefWidth="75.0" text="Adi" />
+            <TableColumn fx:id="Soyadi" prefWidth="75.0" text="Soyadi" />
+            <TableColumn fx:id="D_Tarihi" prefWidth="75.0" text="D.Tarihi" />
+            <TableColumn fx:id="Tc_Kimlik" prefWidth="71.0" text="Tc kimlik" />
+            <TableColumn fx:id="Telefon_No" prefWidth="79.0" text="Telefon No" />
+            <TableColumn fx:id="Medeni_Hal" prefWidth="75.0" text="Medeni Hal" />
+            <TableColumn fx:id="Maas" prefWidth="85.0" text="Ucret beklenitii" />
+            <TableColumn fx:id="Adres" prefWidth="87.0" text="Adres" />
+            <TableColumn fx:id="Egitim" prefWidth="90.0" text="Eğitim" />
+            <TableColumn fx:id="Tecrube" prefWidth="83.0" text="Tecrübe" />
+            <TableColumn fx:id="Alan" prefWidth="118.0" text="Alan" />
+         </columns>
+      </TableView>
+      <Label fx:id="tckimlik" layoutX="18.0" layoutY="422.0" text="Label" visible="false" />
+      <Button fx:id="btnSil" layoutX="478.0" layoutY="417.0" mnemonicParsing="false" onAction="#btnSil_Click" prefHeight="34.0" prefWidth="118.0" style="-fx-background-color: #e8e5d3;" text="KAYDIMI SIL">
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/javafotolar/sil.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btn_arama" layoutX="349.0" layoutY="405.0" mnemonicParsing="false" onAction="#btn_arama_Click" prefHeight="40.0" prefWidth="97.0" style="-fx-background-color: #e8e5d3;" text="Arama">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/javafotolar/arama.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="Btn_Geri" layoutX="602.0" layoutY="421.0" mnemonicParsing="false" onAction="#Btn_Geri_Click" prefHeight="34.0" prefWidth="84.0" style="-fx-background-color: #e8e5d3;" text="GERI DON">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/javafotolar/geri.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Label layoutX="56.0" layoutY="300.0" text="SOYADINIZ ILE ARAMA YAPABILIRSINIZ" />
+      <AnchorPane layoutY="22.0" prefHeight="48.0" prefWidth="1086.0" style="-fx-background-color: #e8e5d3;">
+         <children>
+            <Label layoutX="241.0" layoutY="16.0" prefHeight="17.0" prefWidth="649.0" text="ISCI KAYIT TABLOSUNU ASAGIDA GOZUKMEKTEDIR KIMLIK NUMARANIZ ILE BILGILERINIZI DAHA HIZLI GOREBILIRSINIZ" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

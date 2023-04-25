@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="388.0" prefWidth="462.0" style="-fx-background-color: #f8f8f8;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.OtomasyonBilgilendirmesiController">
+   <children>
+      <AnchorPane prefHeight="406.0" prefWidth="103.0" style="-fx-background-color: #c3c3c3;" />
+      <ImageView fitHeight="190.0" fitWidth="359.0" layoutX="103.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/javafotolar/Ekran%20görüntüsü%202022-05-29%20022638.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="179.0" layoutY="82.0" text="ONLINE PERSONEL KAYIT OTOMASYONU" />
+      <AnchorPane layoutX="103.0" layoutY="304.0" prefHeight="56.0" prefWidth="359.0" style="-fx-background-color: #cdcccc;">
+         <children>
+            <Label layoutX="80.0" layoutY="6.0" text="KURULUS TARİHİ;" />
+            <Label layoutX="105.0" layoutY="28.0" text="25-05-2022" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="103.0" layoutY="17.0" prefHeight="39.0" prefWidth="359.0" style="-fx-background-color: #cdcccc;">
+         <children>
+            <Label layoutX="77.0" layoutY="11.0" text="KURUCUMUZ:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="165.0" layoutY="11.0" text="İSMAİL ÖZDOĞAN">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

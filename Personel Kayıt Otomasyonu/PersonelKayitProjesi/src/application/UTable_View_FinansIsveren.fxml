@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="570.0" prefWidth="1308.0" style="-fx-background-color: #e4e4c2;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UTable_View_FinansIsveren">
+   <children>
+      <TableView fx:id="Table_View_finans" layoutX="-45.0" layoutY="109.0" onMouseClicked="#kayitlar_table_Click" prefHeight="261.0" prefWidth="1318.0" tableMenuButtonVisible="true">
+         <columns>
+            <TableColumn fx:id="ID" prefWidth="44.0" text="ID" />
+            <TableColumn fx:id="Adi" prefWidth="88.0" text="Adi" />
+            <TableColumn fx:id="Soyadi" prefWidth="77.0" text="Soyadi" />
+            <TableColumn fx:id="D_Tarihi" prefWidth="81.0" text="D.Tarihi" />
+            <TableColumn fx:id="Tc_Kimlik" prefWidth="81.0" text="Tc kimlik" />
+            <TableColumn fx:id="Telefon_No" prefWidth="79.0" text="Telefon No" />
+            <TableColumn fx:id="Medeni_Hal" prefWidth="75.0" text="Medeni Hal" />
+            <TableColumn fx:id="Maas" prefWidth="85.0" text="Ucret beklenitii" />
+            <TableColumn fx:id="Adres" prefWidth="87.0" text="Adres" />
+            <TableColumn fx:id="Egitim" prefWidth="90.0" text="Lisans" />
+            <TableColumn fx:id="Ortalama" prefWidth="62.0" text="Ortalama" />
+            <TableColumn fx:id="mail" prefWidth="75.0" text="mail" />
+            <TableColumn fx:id="cinsiyet" prefWidth="63.0" text="cinsiyet" />
+            <TableColumn fx:id="Erp_Bilgisi" prefWidth="75.0" text="Erp Bilgisi" />
+            <TableColumn fx:id="Exel_Bilgisi" prefWidth="75.0" text="Exel Bilgisi" />
+            <TableColumn fx:id="C_saati" prefWidth="75.0" text="C.Saati Esneklik" />
+            <TableColumn fx:id="modul" prefWidth="75.0" text="Modul" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtadi" layoutX="190.0" layoutY="396.0" />
+      <TextField fx:id="txtsoyadi" layoutX="190.0" layoutY="452.0" />
+      <TextField fx:id="telefon" layoutX="190.0" layoutY="520.0" />
+      <Label layoutX="154.0" layoutY="400.0" text="ADI:" />
+      <Label layoutX="129.0" layoutY="456.0" prefHeight="17.0" prefWidth="49.0" text="SOYADI:" />
+      <Label layoutX="87.0" layoutY="524.0" prefHeight="17.0" prefWidth="103.0" text="ILETISIM BILGILERI:" />
+      <TextArea fx:id="txtarea" layoutX="417.0" layoutY="397.0" prefHeight="136.0" prefWidth="395.0" />
+      <TextField fx:id="maila" layoutX="190.0" layoutY="486.0" />
+      <Label layoutX="129.0" layoutY="490.0" prefHeight="17.0" prefWidth="49.0" text="Mail:" />
+      <Button fx:id="iseal" layoutX="1091.0" layoutY="470.0" mnemonicParsing="false" onAction="#iseal_Click" prefHeight="33.0" prefWidth="115.0" style="-fx-background-color: #e0f6ff;" text="MULAKATA AL" />
+      <AnchorPane layoutX="15.0" layoutY="24.0" prefHeight="41.0" prefWidth="1293.0" style="-fx-background-color: #e0f6ff;">
+         <children>
+            <Label layoutX="547.0" layoutY="10.0" prefHeight="22.0" prefWidth="240.0" text="FINANS ALANINDA IS BASVURU LISTESI" />
+         </children>
+      </AnchorPane>
+      <ToggleButton fx:id="geridon" layoutX="1115.0" layoutY="515.0" mnemonicParsing="false" onAction="#geridon_click" prefHeight="17.0" prefWidth="90.0" style="-fx-background-color: #e0f6ff;" text="GERIDON">
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/javafotolar/geri.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </ToggleButton>
+      <TextField fx:id="Sirket" layoutX="883.0" layoutY="444.0" prefHeight="25.0" prefWidth="182.0" />
+      <Label layoutX="926.0" layoutY="421.0" text="Sırket Adini giriniz" />
+   </children>
+</AnchorPane>

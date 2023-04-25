@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Anaform_Anchor" prefHeight="529.0" prefWidth="869.0" style="-fx-background-color: #95c0d3;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Ana_Sayfa_Controller">
+   <children>
+      <Button fx:id="Btn_Ogretmen" layoutX="470.0" layoutY="405.0" mnemonicParsing="false" onAction="#Btn_Ogretmen_Click" prefHeight="25.0" prefWidth="139.0" style="-fx-background-color: #fffecc;" text="Ogretmen" textOverrun="LEADING_WORD_ELLIPSIS">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7631579041481018" green="0.4805068373680115" blue="0.4805068373680115" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="Btn_Guvenlik" layoutX="631.0" layoutY="405.0" mnemonicParsing="false" onAction="#Btn_Guvenlik_Click" prefHeight="17.0" prefWidth="139.0" style="-fx-background-color: #fffecc;" text="GUVENLIK" textOverrun="LEADING_WORD_ELLIPSIS">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7631579041481018" green="0.4805068373680115" blue="0.4805068373680115" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <ImageView fx:id="f6" fitHeight="86.0" fitWidth="128.0" layoutX="482.0" layoutY="317.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/javafotolar/download.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="f7" fitHeight="86.0" fitWidth="84.0" layoutX="652.0" layoutY="317.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/javafotolar/guv.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="anchorb" layoutY="-21.0" prefHeight="308.0" prefWidth="463.0" style="-fx-background-color: #e1ffee;">
+         <children>
+            <ImageView fx:id="f1" fitHeight="73.0" fitWidth="139.0" layoutX="214.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/javafotolar/isletme.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="387.0" prefHeight="308.0" prefWidth="482.0" style="-fx-background-color: #f8a66e;">
+               <children>
+                  <Button fx:id="Saglik" layoutX="20.0" layoutY="248.0" mnemonicParsing="false" onAction="#Saglik_Cliclk" prefHeight="46.0" prefWidth="111.0" style="-fx-background-color: #fffecc;" text="Saglik" textOverrun="LEADING_WORD_ELLIPSIS">
+                     <font>
+                        <Font name="Calibri" size="25.0" />
+                     </font>
+                     <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.7631579041481018" green="0.4805068373680115" blue="0.4805068373680115" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </Button>
+                  <Button fx:id="Btn_Mimar" layoutX="207.0" layoutY="248.0" mnemonicParsing="false" onAction="#Btn_Mimar_Click" style="-fx-background-color: #fffecc;" text="Mimar" textOverrun="LEADING_WORD_ELLIPSIS">
+                     <font>
+                        <Font name="Calibri" size="25.0" />
+                     </font>
+                     <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.7631579041481018" green="0.4805068373680115" blue="0.4805068373680115" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </Button>
+                  <ImageView fx:id="f3" fitHeight="73.0" fitWidth="128.0" layoutX="197.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Desktop/javafotolar/grafik.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="f2" fitHeight="73.0" fitWidth="147.0" layoutX="2.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Desktop/javafotolar/images.jpg" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="-311.0" layoutY="23.0" prefHeight="46.0" prefWidth="663.0" style="-fx-background-color: #d0d0d0;">
+                     <children>
+                        <Label layoutX="15.0" layoutY="15.0" text="SIZDE IS BULMAK ISTIYORSANIZ PERSONEL KAYIT OTOMASYONUNDAN ALANINIZI SECIP FORMU DOLDURABILIRSINIZ" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <Button fx:id="Btn_Finans1" layoutX="217.0" layoutY="248.0" mnemonicParsing="false" onAction="#Btn_Finans_Click" prefHeight="39.0" prefWidth="111.0" style="-fx-background-color: #fffecc;" text="FINANS" textOverrun="LEADING_WORD_ELLIPSIS">
+               <font>
+                  <Font name="Calibri" size="25.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.638121546961326" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color opacity="0.22077922523021698" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Button>
+            <Button fx:id="Btn_Gizle" layoutY="72.0" mnemonicParsing="false" onAction="#Btn_Gizle_Click" prefHeight="25.0" prefWidth="102.0" style="-fx-background-color: #e2fce1;" text="    MENU">
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Desktop/javafotolar/menu.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="286.0" prefHeight="242.0" prefWidth="460.0" style="-fx-background-color: gray;">
+         <children>
+            <Button fx:id="Btn_Isci" layoutX="179.0" layoutY="111.0" mnemonicParsing="false" onAction="#Btn_Isci_Click" prefHeight="46.0" prefWidth="102.0" style="-fx-background-color: #fffecc;" text="Isci" textOverrun="LEADING_WORD_ELLIPSIS">
+               <font>
+                  <Font name="Calibri" size="25.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.7631579041481018" green="0.4805068373680115" blue="0.4805068373680115" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Button>
+            <Button fx:id="Btn_Muhendislik" layoutX="312.0" layoutY="111.0" mnemonicParsing="false" onAction="#Btn_Muhendislik_Click" prefHeight="46.0" prefWidth="115.0" style="-fx-background-color: #fffecc;" text="Muhendislik" textOverrun="LEADING_WORD_ELLIPSIS">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.7631579041481018" green="0.4805068373680115" blue="0.4805068373680115" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Button>
+            <ImageView fx:id="f4" fitHeight="73.0" fitWidth="123.0" layoutX="168.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/javafotolar/muhendsı.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="f5" fitHeight="77.0" fitWidth="128.0" layoutX="305.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/javafotolar/muhendisss.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="Btn_Geri" layoutX="701.0" layoutY="462.0" mnemonicParsing="false" onAction="#Btn_Geri_Click" prefHeight="17.0" prefWidth="83.0" style="-fx-background-color: #e2fce1;" text="GERI DON">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/javafotolar/geri.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <AnchorPane fx:id="Anchor_Sol" layoutX="-147.0" layoutY="113.0" prefHeight="349.0" prefWidth="147.0" style="-fx-background-color: #dad5d5;">
+         <children>
+            <Button fx:id="GirisimFikirleri" layoutX="11.0" layoutY="39.0" mnemonicParsing="false" onAction="#GirisimFikirleri_Click" prefHeight="86.0" prefWidth="128.0" style="-fx-background-color: #faf2ff;" text="GIRISIM FIKIRLERI ICI BURAYA GOZ ATABILIRSINIZ" wrapText="true">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="Bilgilendirme" layoutX="11.0" layoutY="144.0" mnemonicParsing="false" onAction="#Bilgilendirme_Click" prefHeight="78.0" prefWidth="128.0" style="-fx-background-color: #faf2ff;" text="HAKKIMIZDA " />
+            <Button fx:id="Cikis" layoutX="11.0" layoutY="237.0" mnemonicParsing="false" onAction="#Cikis_Click" prefHeight="78.0" prefWidth="128.0" style="-fx-background-color: #faf2ff;" text="CIKIS" />
+         </children>
+      </AnchorPane>
+      <Slider fx:id="slider" layoutX="188.0" layoutY="508.0" prefHeight="14.0" prefWidth="598.0" />
+   </children>
+</AnchorPane>

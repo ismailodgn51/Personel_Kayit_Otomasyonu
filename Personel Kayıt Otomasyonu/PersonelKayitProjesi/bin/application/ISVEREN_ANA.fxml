@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorb" prefHeight="438.0" prefWidth="572.0" style="-fx-background-color: #e1ffee;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ISVERENController">
+   <children>
+      <AnchorPane layoutY="75.0" prefHeight="35.0" prefWidth="551.0" style="-fx-background-color: #d7d7d7;">
+         <children>
+            <Label layoutX="71.0" layoutY="12.0" prefHeight="17.0" prefWidth="407.0" text="BIZI TERCIH ETTIGINIZ ICIN TESEKUR EDERIZ UMARIM YARDIMCI OLURUZ">
+               <textFill>
+                  <RadialGradient centerX="0.5165745856353591" centerY="0.42417061611374407" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color green="0.28776979446411133" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="ogretmen" layoutX="279.0" layoutY="162.0" mnemonicParsing="false" onAction="#ogretmen_cliclk" prefHeight="41.0" prefWidth="115.0" style="-fx-background-color: #e3dfe8;" text="OGRETMEN">
+         <textFill>
+            <RadialGradient centerX="0.5718232044198894" centerY="0.42417061611374407" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.28776979446411133" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.6705882549285889" green="0.6196078658103943" blue="0.7254902124404907" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="mimar" layoutX="279.0" layoutY="216.0" mnemonicParsing="false" onAction="#mimar_click" prefHeight="41.0" prefWidth="115.0" style="-fx-background-color: #e3dfe8;" text="MIMAR">
+         <textFill>
+            <RadialGradient centerX="0.5718232044198894" centerY="0.42417061611374407" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.28776979446411133" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.09019608050584793" green="0.46666666865348816" blue="0.5607843399047852" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="saglik" layoutX="403.0" layoutY="216.0" mnemonicParsing="false" onAction="#saglik_click" prefHeight="41.0" prefWidth="115.0" style="-fx-background-color: #e3dfe8;" text="SAGLIK C.">
+         <textFill>
+            <RadialGradient centerX="0.5718232044198894" centerY="0.42417061611374407" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.28776979446411133" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.09019608050584793" green="0.46666666865348816" blue="0.5607843399047852" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="isci" layoutX="403.0" layoutY="265.0" mnemonicParsing="false" onAction="#isci_cliclk" prefHeight="41.0" prefWidth="115.0" style="-fx-background-color: #e3dfe8;" text="ISCI">
+         <textFill>
+            <RadialGradient centerX="0.5718232044198894" centerY="0.42417061611374407" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.28776979446411133" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.09019608050584793" green="0.46666666865348816" blue="0.5607843399047852" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="guvenlik" layoutX="279.0" layoutY="265.0" mnemonicParsing="false" onAction="#guvenlik_click" prefHeight="41.0" prefWidth="115.0" style="-fx-background-color: #e3dfe8;" text="GUVENLIK">
+         <textFill>
+            <RadialGradient centerX="0.5718232044198894" centerY="0.42417061611374407" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.28776979446411133" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.09019608050584793" green="0.46666666865348816" blue="0.5607843399047852" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="finans" layoutX="279.0" layoutY="316.0" mnemonicParsing="false" onAction="#finans_click" prefHeight="41.0" prefWidth="115.0" style="-fx-background-color: #e3dfe8;" text="FINANS.U">
+         <textFill>
+            <RadialGradient centerX="0.5718232044198894" centerY="0.42417061611374407" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.28776979446411133" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.09019608050584793" green="0.46666666865348816" blue="0.5607843399047852" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <Button layoutX="403.0" layoutY="316.0" mnemonicParsing="false" onAction="#geridon" prefHeight="41.0" prefWidth="115.0" style="-fx-background-color: #e3dfe8;" text="GERI DON">
+         <textFill>
+            <RadialGradient centerX="0.5718232044198894" centerY="0.42417061611374407" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.28776979446411133" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.09019608050584793" green="0.46666666865348816" blue="0.5607843399047852" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <AnchorPane layoutY="14.0" prefHeight="8.0" prefWidth="548.0" style="-fx-background-color: white;" />
+      <Label layoutX="150.0" layoutY="33.0" text="Emek olmadan hiçbir şey yetişmez.">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="59.0" prefHeight="8.0" prefWidth="551.0" style="-fx-background-color: white;" />
+      <Label layoutX="378.0" layoutY="47.0" text=" Sofokles">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="355.0" layoutY="138.0" text="ALAN SECINIZ." />
+      <Button fx:id="MUHENDIS" layoutX="403.0" layoutY="162.0" mnemonicParsing="false" onAction="#MUHENDIS_click" prefHeight="41.0" prefWidth="115.0" style="-fx-background-color: #e3dfe8;" text="MUHENDIS">
+         <textFill>
+            <RadialGradient centerX="0.5718232044198894" centerY="0.42417061611374407" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.28776979446411133" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.09019608050584793" green="0.46666666865348816" blue="0.5607843399047852" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <AnchorPane fx:id="Anchor_Sol" layoutX="-115.0" layoutY="160.0" prefHeight="277.0" prefWidth="115.0" style="-fx-background-color: #d7d7d7;">
+         <children>
+            <Button fx:id="GirisimFikirleri" layoutY="35.0" mnemonicParsing="false" onAction="#GirisimFikirleri_Click" prefHeight="64.0" prefWidth="115.0" style="-fx-background-color: #ffffff;" text="GIRISIM FIKIRLERI ICI BURAYA GOZ ATABILIRSINIZ" wrapText="true">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="Bilgilendirme" layoutY="118.0" mnemonicParsing="false" onAction="#Bilgilendirme_Click" prefHeight="47.0" prefWidth="115.0" style="-fx-background-color: #ffffff;" text="HAKKIMIZDA " />
+            <Button fx:id="Cikis" layoutY="195.0" mnemonicParsing="false" onAction="#Cikis_Click" prefHeight="41.0" prefWidth="115.0" style="-fx-background-color: #ffffff;" text="CIKIS" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="Btn_Gizle" layoutX="7.0" layoutY="110.0" mnemonicParsing="false" onAction="#Btn_Gizle_Click" prefHeight="21.0" prefWidth="106.0" style="-fx-background-color: #e3dfe8;" text="    MENU">
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/javafotolar/menu.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Slider fx:id="sliderh" layoutX="551.0" layoutY="138.0" orientation="VERTICAL" prefHeight="269.0" prefWidth="14.0" />
+      <Slider fx:id="slider" layoutX="130.0" layoutY="416.0" prefHeight="14.0" prefWidth="421.0" />
+      <ImageView fx:id="f2" fitHeight="85.0" fitWidth="127.0" layoutX="138.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/javafotolar/alim2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="f1" fitHeight="76.0" fitWidth="127.0" layoutX="138.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/javafotolar/alim11.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnmulakat" layoutX="223.0" layoutY="366.0" mnemonicParsing="false" onAction="#btnmulakat_C" prefHeight="41.0" prefWidth="138.0" style="-fx-background-color: #e3dfe8;" text="MULAKATA ALINANLAR" textFill="#17778f" />
+   </children>
+</AnchorPane>
